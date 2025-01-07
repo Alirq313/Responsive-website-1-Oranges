@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+#left{
+    width: 40%;
+    height: 100%;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+#lnavr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: antiquewhite;
+
+}
+
+#rtop{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    background-color: blue;
+}
+
+#rbottom{
+    width: 100%;
+    height: 60%;
+    background-image: url(tree.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#rTopLeft{
+    width: 55%;
+    height: 100%;
+    background-image: url(orangecut.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#rTopRight{
+    width: 45%;
+    height: 100%;
+    background-image: url(orangeSlice.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#back{
+    width: 30px;
+    height: 30px;
+}
+
+#xIcon {
+    width: 20px;
+    height: 20px;
+}
+
+#left #textCenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#textCenter h1{
+    font-size: 90px;
+    font-weight: 900px;
+}
+
+#textCenter p{
+    opacity: .6;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#textCenter a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    opacity: .6;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+@media(max-width: 700px){
+    #main{
+        flex-direction: column;
+    }
+
+    #main #left{
+        width: 100%;
+    }
+
+    #main #right{
+        width: 100%;
+    }
+}
